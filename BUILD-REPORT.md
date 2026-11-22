@@ -896,3 +896,100 @@ lane. On-device read-back: versionName 0.4.1 / versionCode 12;
 `screensaver_components` still points at
 `com.jonathancruzate.museambient/.AmbientDreamService`; the installed
 base.apk pulled back is hash-identical to the staged APK.
+
+## v0.4.2 addendum (2026-11-22) — Muse Dash items in the footer register
+
+Version 0.4.2, **versionCode 13**. The diagnosis behind it (same night):
+the screensaver read as empty at 02:01 because the feed's only
+Dash-sourced content was the calendar, and the calendar shows dots,
+not items. Jonathan's steer: Muse Dash is the screensaver feed
+source, and its items belong on the wall as readable text. His one
+design decision, taken the same night: at night the items show
+WHISPERED (dim parchment tier), never suppressed entirely.
+
+Feed: new optional `dash` field (schema in MUSE-FEED.md), compiled by
+the Muse Dash compilation lane. New `producer/compile_dash_items.py`
+runs inside every Muse Dash refresh (the `muse-dash-morning-refresh`
+cron body now runs it immediately after `compile_dash_calendar.py`)
+and writes `producer/dash-items.json`: today's events from the
+compilation's own `dash-calendar.json`, then the Dash's top open items
+from its compiled data block (the `dash-data` JSON the refresh
+rebuilds from the tracked items and goals), needs-you first, max 6
+lines total. The producer (`src_dash`) emits the field only when the
+file's date is today (America/New_York) and its `compiledAt` is at
+most 36 h old, carrying `compiledAt` through; stale or absent retires
+the field, never an error.
+
+App: `MuseFeed` parses `dash` into preformatted display lines.
+`DashboardView` gains a third footer voice beside the Muse note and
+Now Playing: up to six Newsreader italic lines (56 panel, 76 line
+height) under a 3 px accent rule with a `MUSE DASH` attribution,
+mirroring the note's marginalia treatment. The register stays
+single-voice: Now Playing preempts with its existing 20 s grace; when
+media is idle, the note and the Dash lines rotate every 45 s if both
+are present (evaluated on the 20 s dashboard tick, so a voice holds
+45-60 s, long enough to read six lines from the couch), and a lone
+voice holds the register. At night the Dash lines render in the
+whispered parchment tier (lines 0.65, attribution 0.48, rule 0.30)
+instead of the note's night suppression. Art face untouched.
+
+First live contents (published 2026-11-22 02:24 EST, producer run
+`ok: true`, VPS copy md5-identical to the local output): Church
+11:30 AM; Friendsgiving Murder Mystery Potluck 3:00 PM; Best buy due!
+4:00 PM; Gym 7:30 PM; then the open items "Fold8: clear the Chase
+fraud alert" and "Fi Fold8 return: drop off after today's delivery"
+(the Dash compilation's two needs-you headlines; its `dashUpdatedAt`
+of Nov 21, 7:00 AM EST is recorded in dash-items.json, since the open
+items mirror the Dash's current compilation exactly as the Dash
+itself shows them).
+
+Verification: build clean via build.sh; aapt2 badging shows
+versionCode 13 / versionName 0.4.2 and `provides-component:'dream'`;
+apksigner v2 + v3 true. APK: Muse-Ambient-0.4.2.apk, 1,760,581 bytes,
+SHA-256 `6aa8e6eceb5d8cc4168a0abd9df3375c2aabe79ae5b151abf09b654351e153e0`.
+
+**Installed 2026-11-22**: `install -r` over v0.4.1 via the tailnet
+lane. On-device read-back: versionName 0.4.2 / versionCode 13;
+`screensaver_components` unchanged; `screen_off_timeout` untouched at
+300000. **Dream capture explicitly OWED**: at install time Jonathan
+was actively watching YouTube on the Shield (HA `media_player.shield`
+state playing, fresh title), so no dream was forced, per the standing
+rule for this project. The capture joins the already-owed morning
+day-palette calendar capture: timeout pattern with the TV idle after
+06:30, expecting the footer register to show the six Dash lines above
+in the day ink tiers, and the night whispered tier on any capture
+before 06:30.
+
+---
+
+## v0.4.3 (2026-11-22) — TV banner rollback: adaptive wrapper removed
+
+Banner-only release on top of v0.4.2; no source changes. The v0.4.1
+template adoption had made `android:banner` resolve to the
+`drawable-anydpi-v26/banner.xml` `<adaptive-icon>`; Projectivy renders
+an adaptive banner with the AdaptiveIconDrawable safe-zone crop
+(measured ~1.50x center-zoom, ~16.7% lost per edge — agy consult at
+`~/workspace/muse-app-logos/agy-banner-consult/agy-report.md`), which
+clipped the M and truncated "Muse Ambient" in the launcher favorites
+row. Fix: the anydpi-v26 banner XML and its `banner_foreground` /
+`banner_background` layers are deleted, so the banner resolves to the
+plain bitmap ladder again (all entries pixel-identical to the
+muse-app-logos exports, 0 differing px; artwork unchanged). Launcher
+adaptive icons untouched. Version files only otherwise: manifest +
+app/build.gradle to versionCode 14 / versionName 0.4.3, build.sh
+output name updated.
+
+Verification: build clean via build.sh; aapt2 badging shows
+versionCode 14 / versionName 0.4.3, `provides-component:'dream'`, and
+the application banner resolving to `res/drawable-mdpi-v4/banner.png`;
+apksigner v2 + v3 true. APK: Muse-Ambient-0.4.3.apk, SHA-256
+`a6ebf2c91bca5ef9c190be8af32f9537c73617e89f78d8bd348b6b62b8a42d46`.
+
+**Installed 2026-11-22**: `install -r` over v0.4.2 via the tailnet
+lane. On-device read-back: versionName 0.4.3 / versionCode 14;
+installed base.apk hash-identical to the staged APK;
+`screensaver_components` still Muse Ambient. Rendering verified on
+the TV after a `pm trim-caches` + reboot cycle: the "Muse Ambient"
+card renders complete (full M, badge, full name) focused and
+unfocused (`~/workspace/muse-app-logos/banner-fix-2026-11-22/bitmap-fix-ambient-focused.png`,
+`bitmap-fix-gadget-focused.png`).

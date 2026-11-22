@@ -30,5 +30,5 @@ if [[ ! -f "$KEYSTORE" ]]; then "$JAVA_HOME/bin/keytool" -genkeypair -keystore "
 FINAL_APK="$APK_DIR/muse-ambient-debug.apk"
 "$BUILD_TOOLS/apksigner" sign --ks "$KEYSTORE" --ks-pass pass:android --key-pass pass:android --ks-key-alias androiddebugkey --out "$FINAL_APK" "$APK_DIR/muse-ambient-unsigned.apk"
 "$BUILD_TOOLS/apksigner" verify --verbose "$FINAL_APK" | head -n 5
-cp "$FINAL_APK" "$PROJECT_DIR/Muse-Ambient-0.4.1.apk"
+cp "$FINAL_APK" "$PROJECT_DIR/Muse-Ambient-0.4.3.apk"
 echo "SUCCESS: $FINAL_APK"; sha256sum "$FINAL_APK"

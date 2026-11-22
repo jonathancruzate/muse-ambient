@@ -5,12 +5,42 @@ Ambient Service after August 1, 2026) for a Samsung QN65Q80R. It does not run
 on the Samsung (Tizen) at all: it runs on the Nvidia Shield TV that drives
 that TV over HDMI-CEC, as an Android TV system screensaver (DreamService).
 
-Version 0.3.0 (versionCode 6), package `com.jonathancruzate.museambient`,
+Version 0.4.3 (versionCode 14), package `com.jonathancruzate.museambient`,
 minSdk 26, target/compile SDK 30 (the Shield's Android 11; raise when a newer
-platform jar is installed on the build host). v0.3.0 is installed and verified
-live on the Shield as the system screensaver. It has two faces, switchable in
+platform jar is installed on the build host). v0.4.3 is installed on the
+Shield as the system screensaver. It has two faces, switchable in
 Settings: the **Dashboard** (default, new in v0.3) and the **Art slideshow**
 (the v0.2.2 system, unchanged), plus a Rotate mode that alternates them.
+
+## Dash items on the wall (v0.4.2)
+
+The footer register under the calendar gains a third voice: the Muse
+Dash's own items as readable text (the feed's `dash` field, compiled by
+the Muse Dash refresh; see MUSE-FEED.md). Today's events first, then
+the Dash's top open items, up to six Newsreader italic lines under an
+accent rule with a MUSE DASH attribution. The register stays
+single-voice: Now Playing preempts, and the Muse note and the Dash
+lines rotate every 45 s when both are present. At night the Dash lines
+whisper in the parchment tier instead of being suppressed (Jonathan's
+decision), so the wall is never item-less.
+
+## Wall calendar (v0.4.0)
+
+The dashboard's right side is now a proper month wall calendar (Jonathan's
+request; design: the Gemini calendar consult,
+`~/workspace/shield/gemini-calendar-consult.md`). A printed month broadside:
+Newsreader Light month title, tracked Source Sans weekday headers over one
+hairline, Newsreader day numerals with no cell gridlines, today in the
+slate-teal accent over a short accent rule, event days marked with up to
+three small accent dots (never tiny titles, never per-event colours).
+Adjacent-month padding cells are bare plaster. The month comes from the
+device clock; events come from the feed's `calendar` field, which is
+compiled by the Muse Dash refresh pipeline (see MUSE-FEED.md), and a
+missing or stale field degrades to a plain grid. The Muse note and Now
+Playing share a single-voice footer register under the calendar and never
+show at once. At night the calendar whispers in parchment tiers; in house
+Night mode it leaves entirely. The night backdrop deepened in this release
+(#100E0D) so the panel's local dimming pulls down further.
 
 ## Dashboard mode (v0.3.0)
 
@@ -30,11 +60,15 @@ The design follows a fresh Gemini consultation (full spec in
 - **Layout**: a permanent left spine (clock, date, weather, house mode
   with a single 10 px dot) over a 2 px hairline datum; below it a
   household ledger in three pinned slots (HOME / DAISY / NEXT) that
-  dissolve without reflow when empty. The right half stays open plaster.
+  dissolve without reflow when empty. Since v0.4.0 the right side
+  carries the wall calendar (above).
 - **Conditional zones**: the Muse note as Newsreader italic marginalia
-  with a slate-teal rule; Now Playing bottom-right (text only, no album
-  art); the Daily Brief as a rotation moment (45 s every 5 min, active
-  hours only, yields for 60 s when Daisy or Next changes).
+  with a slate-teal rule; Now Playing (text only, no album art). Since
+  v0.4.0 both live in the footer register under the calendar and
+  alternate; since v0.4.2 the Muse Dash items join them there as a
+  third rotating voice (above). The Daily Brief remains a rotation
+  moment (45 s every 5 min, active hours only, yields for 60 s when
+  Daisy or Next changes).
 - **Notifications**: top-right, one at a time, on a translucent
   warm-paper veil with a slate-teal bar: 500 ms in, 12 s hold (18 s for
   doorbell), 1500 ms out, queued with per-source cooldown.
@@ -158,7 +192,7 @@ which also builds with no network access.
 
 ```bash
 ./build.sh   # framework-only, uses ~/workspace/shield-wifi-sense/.toolchain
-# output: Muse-Ambient-0.3.0.apk (debug-signed)
+# output: Muse-Ambient-0.4.3.apk (debug-signed)
 ```
 
 A standard Gradle project (`settings.gradle`, `app/build.gradle`) is also
@@ -168,7 +202,7 @@ included for Android Studio.
 
 ```bash
 adb connect <shield-ip>:5555
-adb install -r Muse-Ambient-0.3.0.apk
+adb install -r Muse-Ambient-0.4.2.apk
 ```
 
 Set as screensaver: **Settings > Device Preferences > Screen saver >

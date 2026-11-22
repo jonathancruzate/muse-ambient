@@ -8,8 +8,8 @@ android {
         applicationId 'com.jonathancruzate.museambient'
         minSdk 26
         targetSdk 30
-        versionCode 12
-        versionName '0.4.1'
+        versionCode 14
+        versionName '0.4.3'
     }
     buildTypes { release { minifyEnabled false } }
     compileOptions { sourceCompatibility JavaVersion.VERSION_1_8; targetCompatibility JavaVersion.VERSION_1_8 }
