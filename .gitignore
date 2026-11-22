@@ -1,0 +1,12 @@
+*.apk
+app/build/
+build/
+.gradle/
+.toolchain/
+*.keystore
+local.properties
+producer/.feed-token
+producer/producer-state.json
+producer/out/
+producer/calendar-cache.json
+producer/brief-lines.json
