@@ -722,3 +722,139 @@ built APK (both drawable entries) is pixel-identical to the new export
 change banner and was superseded the same night before any install.)
 NOT installed: per this project's rule, never install unattended;
 ready for a deliberate install.
+
+**Installed 2026-11-21 23:36 EST** at Jonathan's direct order (overriding
+this project's never-unattended rule for this one time): `adb install -r`
+over v0.3.1 via the tailnet lane (127.0.0.1:5556). On-device read-back:
+versionName 0.3.3 / versionCode 9; `screensaver_components` still
+`com.jonathancruzate.museambient/.AmbientDreamService`. The installed
+base.apk pulled back from the device is hash-identical to the staged APK
+above, and its banner resources are pixel-identical (0 differing px) to
+the revised no-tile export.
+
+## v0.3.4 addendum (2026-11-21) — TV banner final layout: small logo + name on one line
+
+Banner-only release (versionCode 10, versionName 0.3.4). From
+Jonathan's photo of the live TV launcher (2026-11-21 23:37 EST), the
+banner layout was finalized as: a SMALL logo (M + gold art badge) on
+the left, the full app name "Muse Ambient" on the right on ONE line,
+no tagline. banner.png (320x180, drawable + drawable-xhdpi) replaced
+with the final export from `~/workspace/muse-app-logos/banners/`
+(banner-muse-ambient-320x180.png). Verified: banner extracted from the
+built APK (both drawable entries) is pixel-identical to the final
+export (0 differing px); apksigner verify passed (v2 + v3); badging
+shows versionCode 10 / 0.3.4 and `provides-component:'dream'`. APK:
+Muse-Ambient-0.3.4.apk, 1,673,990 bytes, SHA-256
+`854449a8cd4d4ef9e6562a5d1615b53bf8d2132a6880b8c7c7cb0fe17b65e086`.
+
+Build circumstance, recorded honestly: the main source tree was
+mid-v0.4.0 calendar work in another handling (DashboardView /
+MuseFeed edits, 2026-11-22 04:40-04:44 UTC) and did not compile, so
+0.3.4 was built in a side copy of the project with those two files
+restored to their seeded v0.3.3 sources from this repo on GitHub and
+the project's own debug keystore, so the signature matches the
+installed lineage. The main tree's version files were left to the
+v0.4.0 handling (they read 0.4.0 / versionCode 11).
+
+**NOT installed — superseded on-device before it could land.** By the
+time 0.3.4 was built, the Shield already ran Muse Ambient v0.4.0
+(versionCode 11) from the parallel handling, so installing 0.3.4 would
+have been a downgrade. No install was attempted. The final banner is
+nonetheless live on the TV: the installed v0.4.0 base.apk was pulled
+and both its banner entries are pixel-identical (0 differing px) to
+the final export above (that build picked up the final banner from
+this tree's res/), and `screensaver_components` still points at
+`com.jonathancruzate.museambient/.AmbientDreamService` (read back
+2026-11-21 23:52 EST).
+
+## v0.4.0 addendum (2026-11-21) — the wall calendar, Dash-sourced
+
+Version 0.4.0, **versionCode 11** (the brief said code 8; codes 8 and 9
+were already taken by the v0.3.2 icon and v0.3.3 banner releases, code
+10 was staged in the tree for an unbuilt 0.3.4, so 0.4.0 ships as 11).
+APK: Muse-Ambient-0.4.0.apk, 1,673,990 bytes, SHA-256
+`199da369505599f7efd8b4e302e95bf2a3c34c935302220a810114bdc2e8d214`,
+debug-signed, apksigner v2/v3 true, badging shows
+`provides-component:'dream'`. **Installed on the Shield** the same
+night (`install -r` over v0.3.3; on-device read-back versionName 0.4.0 /
+versionCode 11; `screensaver_components` unchanged).
+
+**What it adds.** A month wall calendar on the dashboard's right side
+(Jonathan: "Add a calendar to the right side so it takes up the empty
+space like a virtual wall calendar"). Design by the Gemini calendar
+consult (full text `~/workspace/shield/gemini-calendar-consult.md`):
+block at panel x1920 y220, 1680x1240; Newsreader Light 104 month title
+(no year); Source Sans Medium 44 tracked weekday headers over a single
+2 px hairline; Newsreader Regular 68 day numerals, no cell gridlines;
+row height 192 for 5-week months, 160 for 6-week; today in the accent
+with a stepped weight over a 64x4 accent rule; event days carry up to
+three 12 px dots (accent for today/future, ink 0.32 for past) and no
+text under the legibility floors; adjacent-month padding cells are
+bare plaster. The Muse note and Now Playing moved into a single-voice
+footer register under the calendar (panel y1600): they never show
+simultaneously, Now Playing preempts, and the note returns after a
+20 s idle grace. Adaptations from the consult: the bundle has no
+Newsreader Medium instance, so today's weight step is fakeBold on the
+Regular instance; the month title's baseline compensates 44 px of
+font-internal leading so its cap top lands exactly on the consult's
+panel y248 (measured on device). During the Daily Brief rotation the
+calendar fades out with the rest of the dynamic zones and returns
+after.
+
+**Data: Muse Dash is the calendar's source** (Jonathan's direction:
+"I propose using muse dash as the screensaver feed source"). Dash's
+own compiled data covers only today plus curated upcoming highlights,
+not the full month, so the extension landed at the Dash compilation
+layer as directed: `producer/compile_dash_calendar.py` now runs inside
+every Muse Dash refresh (the `muse-dash-morning-refresh` cron body was
+updated in place) and writes `producer/dash-calendar.json` from the
+same `hatch_gws_cli +agenda --days 45` pull the Dash agenda uses,
+curated (nightly Sleep block skipped, cross-calendar duplicates
+collapsed, 4 events/day listed with the true total kept, all-day
+flagged). The producer emits the feed's new `calendar` field from that
+file only when its month is current and `compiledAt` is at most 36 h
+old, carrying `compiledAt` through; the app overlays events only when
+the field's month equals the device month, so a stale Dash degrades to
+a plain grid. First compile: month 2026-11, 9 event days, 41 events.
+`nextEvent` deliberately stays on the 15-minute calendar cache: Dash's
+upcoming list is 3 curated highlights over 3 weeks, not the complete
+agenda, and both lanes compile from the same Google Calendar, so the
+TV and the Dash cannot disagree about the source of record. Weather is
+not a feed field (the app reads it on-device), so Dash's basics
+strings are not used. Schema: MUSE-FEED.md.
+
+**Night check (owed since v0.3.x): verdict, the inversion works.**
+Jonathan's 23:31 photo showed the panel bright; the framebuffer says
+otherwise. Live dream captures on v0.3.3 (23:47-23:52 EST) measured
+median RGB (32, 29, 26) in every sampled region: the deep warm
+charcoal, exactly as designed; the photo's brightness is the phone
+camera's auto-exposure lifting a dim panel in a dark room. This
+release also adopts the consult's FALD suggestion and deepens the
+night overlay from #1B1816 to #100E0D; the v0.4.0 night capture
+measures (21, 20, 18). At night the calendar persists whispered
+(parchment tiers, past dots hidden) while the house mode is Home; it
+hides only on explicit house Night mode.
+
+**Verification.** Dream triggered via the SYSTEM timeout pattern on
+the installed build; `dumpsys dreams` names AmbientDreamService and
+`mWakefulness=Dreaming`. The night capture
+(`~/workspace/shield/muse-ambient-v040-night.png`) shows the real
+November 2026 grid (5 weeks, starts Sunday the 1st), today the 21st in
+the night accent with its rule, and dot counts matching the live
+Dash-compiled feed exactly (22-28 capped at 3, 29 with 1, 30 with 3),
+which also proves the feed URL pref survived `install -r` and the
+whole compile-to-grid pipeline works end to end. The bundled sample
+carries no calendar field, so the no-field path renders the plain
+grid by construction. Art mode is unregressed: `AmbientView.java` is
+byte-identical to the v0.3.3 build; this release touches only
+`DashboardView.java` and `MuseFeed.java` (additive parse). Two gaps,
+named: (1) the DAY palette of the calendar was not captured live,
+because the Shield refuses `adb shell date` ("Operation not permitted")
+and the house was in the night window; the geometry is
+palette-independent and was verified at night, the day tiers are the
+face's established ink/accent constants, and a day capture is a
+two-minute morning follow-up (timeout pattern after 06:30). (2) The
+Wyze in-room frame is unusable tonight: the camera's live view is
+filled by fabric (it no longer frames the TV; frame timestamp current,
+stream healthy), so in-room judgment rests on the framebuffer
+captures.
