@@ -858,3 +858,41 @@ Wyze in-room frame is unusable tonight: the camera's live view is
 filled by fabric (it no longer frames the TV; frame timestamp current,
 stream healthy), so in-room judgment rests on the framebuffer
 captures.
+
+## v0.4.1 addendum (2026-11-22) — TV banner adopts the Google TV template packaging
+
+Banner-packaging-only release (versionCode 12) at Jonathan's order
+("Adopt", 2026-11-22 00:15 EST), following the gap analysis against the
+official Google TV Figma template (@tv, "TV App Icon Template
+[Android TV & Google TV]"). The banner art is unchanged (small logo
+left, "Muse Ambient" on one line); the resource structure is now the
+template's:
+
+- Legacy ladder: `banner.png` in drawable-mdpi (160x90), drawable-hdpi
+  (240x135), drawable-xhdpi (320x180), drawable-xxhdpi (480x270) and
+  drawable-xxxhdpi (640x360); the unqualified drawable copy is kept.
+- Adaptive set: `drawable-anydpi-v26/banner.xml` (`<adaptive-icon>`
+  with `@drawable/banner_background`, solid #F0F2F5, and
+  `@drawable/banner_foreground`, logo + name on transparent, both in
+  drawable-xxxhdpi). minSdk 26, so the adaptive banner resolves on the
+  Shield (API 30); flat PNGs remain the fallback.
+
+Gate check: the v0.4.0 tree as found compiled cleanly (full build.sh
+run passed before the bump), so the bump proceeded in-tree. Only
+banner res files, the version fields (manifest + build.gradle) and
+build.sh's output APK name were touched; no in-progress source files
+were edited.
+
+Verification: every banner entry extracted from the built APK is
+pixel-identical to its `~/workspace/muse-app-logos/banners/` export
+(0 differing px, all sizes + both layers); aapt2 badging shows the
+application banner resolving to `res/drawable-anydpi-v26/banner.xml`
+and `provides-component:'dream'`; apksigner v2 + v3. APK:
+Muse-Ambient-0.4.1.apk, 1,756,485 bytes, SHA-256
+`24c3b4e68aaf4685f8767679f8ad160add74eb59c2d4cce1a52319ea1de36884`.
+
+**Installed 2026-11-22**: `install -r` over v0.4.0 via the tailnet
+lane. On-device read-back: versionName 0.4.1 / versionCode 12;
+`screensaver_components` still points at
+`com.jonathancruzate.museambient/.AmbientDreamService`; the installed
+base.apk pulled back is hash-identical to the staged APK.
