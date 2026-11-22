@@ -709,11 +709,16 @@ and build.sh aligned, Gradle had lagged at 0.3.1). At Jonathan's order
 (2026-11-21 23:21 EST), the Android TV channel banner no longer shows
 the app icon tile/board: the banner is a solid light background
 (#F0F2F5) with the original Muse M and the gold art badge directly on
-it, full app name in art. banner.png (320x180, drawable +
-drawable-xhdpi) replaced with the revised export from
-`~/workspace/muse-app-logos/banners/` (banner-muse-ambient-320x180.png).
-Verified: banner extracted from the built APK (both drawable entries)
-is pixel-identical to the new export (0 differing px); apksigner verify
-passed. APK: Muse-Ambient-0.3.3.apk, 1,690,374 bytes, SHA-256
-`05d55aa9cbdc932841281f64d1e32961f82cd5d6b90c145fe5b17ae24bd3740e`. NOT installed: per this project's rule, never install
-unattended; ready for a deliberate install.
+it, full app name in art, tagline just "Screensaver" (Jonathan's
+follow-up order 2026-11-21 23:26 EST, shortened from "Art screensaver
+for your TV"). banner.png (320x180, drawable + drawable-xhdpi) replaced
+with the revised export from `~/workspace/muse-app-logos/banners/`
+(banner-muse-ambient-320x180.png). Verified: banner extracted from the
+built APK (both drawable entries) is pixel-identical to the new export
+(0 differing px); apksigner verify passed. APK: Muse-Ambient-0.3.3.apk,
+1,690,374 bytes, SHA-256
+`e3d987ecd94fa67c810b56cd167429cdd03ae056dedc64560c72c28493b9ce6b`.
+(The first 0.3.3 build, SHA-256 05d55aa9..., carried the pre-tagline-
+change banner and was superseded the same night before any install.)
+NOT installed: per this project's rule, never install unattended;
+ready for a deliberate install.
