@@ -1,0 +1,11 @@
+// Root build file. NOTE: the canonical build on Jonathan's fleet is ./build.sh
+// (framework-only, no Gradle plugin downloads) because the VM egress proxy
+// breaks Gradle plugin resolution. This Gradle file is provided so the project
+// also opens/builds in Android Studio where networking works.
+// AGP version is intentionally left to the importing environment.
+buildscript {
+    repositories { google(); mavenCentral() }
+}
+allprojects {
+    repositories { google(); mavenCentral() }
+}

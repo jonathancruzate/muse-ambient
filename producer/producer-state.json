@@ -1,0 +1,20 @@
+{
+ "run_utc": "2026-11-21T22:31:40.321378+00:00",
+ "houseMode": "smartthings-live",
+ "whoHome": "gls-live",
+ "daisy": "daisy_home.py (collar:2m:2min)",
+ "nextEvent_src": "calendar-cache (580s old)",
+ "nextEvent": "calendar-live",
+ "brief": "brief-cache (getbrief)",
+ "alerts": "ha homewhiz warning sensors",
+ "ok": true,
+ "published_fields": [
+  "alerts",
+  "brief",
+  "daisy",
+  "houseMode",
+  "nextEvent",
+  "updatedAt",
+  "whoHome"
+ ]
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Muse Ambient</string>
+    <string name="dream_label">Muse Ambient</string>
+    <string name="start_dream">Start Ambient Now</string>
+    <string name="settings_hint">To use as the system screensaver: Settings &gt; Device Preferences &gt; Screen saver &gt; Screen saver &gt; Muse Ambient. D-pad left/right skips in this preview.</string>
+</resources>

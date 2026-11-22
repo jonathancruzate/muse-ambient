@@ -1,0 +1,805 @@
+{
+  "generatedAt": "2026-11-22T04:21:31Z",
+  "source": "hatch_gws_cli calendar +agenda --days 3 (via muse-ambient-brief-sync)",
+  "events": [
+    {
+      "summary": "Sleep",
+      "start": "2026-11-21T23:00:00-05:00",
+      "end": "2026-11-22T09:00:00-05:00",
+      "event_starts_at": {
+        "user_local": "2026-11-21T23:00:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-22T04:00:00.000Z"
+      },
+      "event_ends_at": {
+        "user_local": "2026-11-22T09:00:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-22T14:00:00.000Z"
+      },
+      "location": "34-35 44th St, Apt 1111, Astoria, NY 11101",
+      "calendar": "Personal"
+    },
+    {
+      "summary": "Church ",
+      "start": "2026-11-22T11:30:00-05:00",
+      "end": "2026-11-22T13:00:00-05:00",
+      "event_starts_at": {
+        "user_local": "2026-11-22T11:30:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-22T16:30:00.000Z"
+      },
+      "event_ends_at": {
+        "user_local": "2026-11-22T13:00:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-22T18:00:00.000Z"
+      },
+      "location": "",
+      "calendar": "stephanygarces96@gmail.com"
+    },
+    {
+      "summary": "Best buy due!",
+      "start": "2026-11-22T16:00:00-05:00",
+      "end": "2026-11-22T17:00:00-05:00",
+      "event_starts_at": {
+        "user_local": "2026-11-22T16:00:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-22T21:00:00.000Z"
+      },
+      "event_ends_at": {
+        "user_local": "2026-11-22T17:00:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-22T22:00:00.000Z"
+      },
+      "location": "",
+      "calendar": "stephanygarces96@gmail.com"
+    },
+    {
+      "summary": "Gym [auto-gym]",
+      "start": "2026-11-22T19:30:00-05:00",
+      "end": "2026-11-22T20:30:00-05:00",
+      "event_starts_at": {
+        "user_local": "2026-11-22T19:30:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-23T00:30:00.000Z"
+      },
+      "event_ends_at": {
+        "user_local": "2026-11-22T20:30:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-23T01:30:00.000Z"
+      },
+      "location": "",
+      "calendar": "Personal"
+    },
+    {
+      "summary": "(No title)",
+      "start": "2026-11-22T19:30:00-05:00",
+      "end": "2026-11-22T20:30:00-05:00",
+      "event_starts_at": {
+        "user_local": "2026-11-22T19:30:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-23T00:30:00.000Z"
+      },
+      "event_ends_at": {
+        "user_local": "2026-11-22T20:30:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-23T01:30:00.000Z"
+      },
+      "location": "",
+      "calendar": "cruzate@google.com"
+    },
+    {
+      "summary": "🍽️ Guilt & Gravy To The Grave: Friendsgiving Murder Mystery Potluck | Partiful",
+      "start": "2026-11-22T20:00:00Z",
+      "end": "2026-11-23T00:30:00Z",
+      "event_starts_at": {
+        "user_local": "2026-11-22T15:00:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-22T20:00:00.000Z"
+      },
+      "event_ends_at": {
+        "user_local": "2026-11-22T19:30:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-23T00:30:00.000Z"
+      },
+      "location": "Location available once RSVP'd",
+      "calendar": "Partiful"
+    },
+    {
+      "summary": "Sleep",
+      "start": "2026-11-22T20:30:00-05:00",
+      "end": "2026-11-23T05:30:00-05:00",
+      "event_starts_at": {
+        "user_local": "2026-11-22T20:30:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-23T01:30:00.000Z"
+      },
+      "event_ends_at": {
+        "user_local": "2026-11-23T05:30:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-23T10:30:00.000Z"
+      },
+      "location": "Hearthstone Astoria, 34-35 44th St, Astoria, NY 11101, USA",
+      "calendar": "Personal"
+    },
+    {
+      "summary": "K-Pulse Next Month Check",
+      "start": "2026-11-23T08:30:00-05:00",
+      "end": "2026-11-23T08:45:00-05:00",
+      "event_starts_at": {
+        "user_local": "2026-11-23T08:30:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-23T13:30:00.000Z"
+      },
+      "event_ends_at": {
+        "user_local": "2026-11-23T08:45:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-23T13:45:00.000Z"
+      },
+      "location": "",
+      "calendar": "stephanygarces96@gmail.com"
+    },
+    {
+      "summary": "File for Unemployment ",
+      "start": "2026-11-23T08:30:00-05:00",
+      "end": "2026-11-23T08:45:00-05:00",
+      "event_starts_at": {
+        "user_local": "2026-11-23T08:30:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-23T13:30:00.000Z"
+      },
+      "event_ends_at": {
+        "user_local": "2026-11-23T08:45:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-23T13:45:00.000Z"
+      },
+      "location": "",
+      "calendar": "stephanygarces96@gmail.com"
+    },
+    {
+      "summary": "(No title)",
+      "start": "2026-11-23T08:30:00-05:00",
+      "end": "2026-11-23T09:00:00-05:00",
+      "event_starts_at": {
+        "user_local": "2026-11-23T08:30:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-23T13:30:00.000Z"
+      },
+      "event_ends_at": {
+        "user_local": "2026-11-23T09:00:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-23T14:00:00.000Z"
+      },
+      "location": "",
+      "calendar": "cruzate@google.com"
+    },
+    {
+      "summary": "(No title)",
+      "start": "2026-11-23T09:00:00-05:00",
+      "end": "2026-11-23T09:30:00-05:00",
+      "event_starts_at": {
+        "user_local": "2026-11-23T09:00:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-23T14:00:00.000Z"
+      },
+      "event_ends_at": {
+        "user_local": "2026-11-23T09:30:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-23T14:30:00.000Z"
+      },
+      "location": "",
+      "calendar": "cruzate@google.com"
+    },
+    {
+      "summary": "(No title)",
+      "start": "2026-11-23T09:30:00-05:00",
+      "end": "2026-11-23T10:00:00-05:00",
+      "event_starts_at": {
+        "user_local": "2026-11-23T09:30:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-23T14:30:00.000Z"
+      },
+      "event_ends_at": {
+        "user_local": "2026-11-23T10:00:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-23T15:00:00.000Z"
+      },
+      "location": "",
+      "calendar": "cruzate@google.com"
+    },
+    {
+      "summary": "(No title)",
+      "start": "2026-11-23T10:00:00-05:00",
+      "end": "2026-11-23T10:30:00-05:00",
+      "event_starts_at": {
+        "user_local": "2026-11-23T10:00:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-23T15:00:00.000Z"
+      },
+      "event_ends_at": {
+        "user_local": "2026-11-23T10:30:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-23T15:30:00.000Z"
+      },
+      "location": "",
+      "calendar": "cruzate@google.com"
+    },
+    {
+      "summary": "Ice skating @World Ice",
+      "start": "2026-11-23T10:30:00-05:00",
+      "end": "2026-11-23T11:45:00-05:00",
+      "event_starts_at": {
+        "user_local": "2026-11-23T10:30:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-23T15:30:00.000Z"
+      },
+      "event_ends_at": {
+        "user_local": "2026-11-23T11:45:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-23T16:45:00.000Z"
+      },
+      "location": "",
+      "calendar": "stephanygarces96@gmail.com"
+    },
+    {
+      "summary": "(No title)",
+      "start": "2026-11-23T10:30:00-05:00",
+      "end": "2026-11-23T11:00:00-05:00",
+      "event_starts_at": {
+        "user_local": "2026-11-23T10:30:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-23T15:30:00.000Z"
+      },
+      "event_ends_at": {
+        "user_local": "2026-11-23T11:00:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-23T16:00:00.000Z"
+      },
+      "location": "",
+      "calendar": "cruzate@google.com"
+    },
+    {
+      "summary": "(No title)",
+      "start": "2026-11-23T11:00:00-05:00",
+      "end": "2026-11-23T11:25:00-05:00",
+      "event_starts_at": {
+        "user_local": "2026-11-23T11:00:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-23T16:00:00.000Z"
+      },
+      "event_ends_at": {
+        "user_local": "2026-11-23T11:25:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-23T16:25:00.000Z"
+      },
+      "location": "",
+      "calendar": "cruzate@google.com"
+    },
+    {
+      "summary": "The Hunger Games: Sunrise on the Reaping",
+      "start": "2026-11-23T11:30:00-05:00",
+      "end": "2026-11-23T14:38:00-05:00",
+      "event_starts_at": {
+        "user_local": "2026-11-23T11:30:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-23T16:30:00.000Z"
+      },
+      "event_ends_at": {
+        "user_local": "2026-11-23T14:38:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-23T19:38:00.000Z"
+      },
+      "location": "190-02 Horace Harding Blvd., 190-02 Horace Harding Blvd. Fresh Meadows NY11365",
+      "calendar": "stephanygarces96@gmail.com"
+    },
+    {
+      "summary": "(No title)",
+      "start": "2026-11-23T12:00:00-05:00",
+      "end": "2026-11-23T12:30:00-05:00",
+      "event_starts_at": {
+        "user_local": "2026-11-23T12:00:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-23T17:00:00.000Z"
+      },
+      "event_ends_at": {
+        "user_local": "2026-11-23T12:30:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-23T17:30:00.000Z"
+      },
+      "location": "",
+      "calendar": "cruzate@google.com"
+    },
+    {
+      "summary": "(No title)",
+      "start": "2026-11-23T12:30:00-05:00",
+      "end": "2026-11-23T13:30:00-05:00",
+      "event_starts_at": {
+        "user_local": "2026-11-23T12:30:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-23T17:30:00.000Z"
+      },
+      "event_ends_at": {
+        "user_local": "2026-11-23T13:30:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-23T18:30:00.000Z"
+      },
+      "location": "",
+      "calendar": "cruzate@google.com"
+    },
+    {
+      "summary": "(No title)",
+      "start": "2026-11-23T14:30:00-05:00",
+      "end": "2026-11-23T15:00:00-05:00",
+      "event_starts_at": {
+        "user_local": "2026-11-23T14:30:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-23T19:30:00.000Z"
+      },
+      "event_ends_at": {
+        "user_local": "2026-11-23T15:00:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-23T20:00:00.000Z"
+      },
+      "location": "",
+      "calendar": "cruzate@google.com"
+    },
+    {
+      "summary": "Verizon Shines Reward",
+      "start": "2026-11-23T15:00:00-05:00",
+      "end": "2026-11-23T15:10:00-05:00",
+      "event_starts_at": {
+        "user_local": "2026-11-23T15:00:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-23T20:00:00.000Z"
+      },
+      "event_ends_at": {
+        "user_local": "2026-11-23T15:10:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-23T20:10:00.000Z"
+      },
+      "location": "",
+      "calendar": "stephanygarces96@gmail.com"
+    },
+    {
+      "summary": "(No title)",
+      "start": "2026-11-23T15:35:00-05:00",
+      "end": "2026-11-23T16:00:00-05:00",
+      "event_starts_at": {
+        "user_local": "2026-11-23T15:35:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-23T20:35:00.000Z"
+      },
+      "event_ends_at": {
+        "user_local": "2026-11-23T16:00:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-23T21:00:00.000Z"
+      },
+      "location": "",
+      "calendar": "cruzate@google.com"
+    },
+    {
+      "summary": "(No title)",
+      "start": "2026-11-23T16:30:00-05:00",
+      "end": "2026-11-23T18:30:00-05:00",
+      "event_starts_at": {
+        "user_local": "2026-11-23T16:30:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-23T21:30:00.000Z"
+      },
+      "event_ends_at": {
+        "user_local": "2026-11-23T18:30:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-23T23:30:00.000Z"
+      },
+      "location": "",
+      "calendar": "cruzate@google.com"
+    },
+    {
+      "summary": "(No title)",
+      "start": "2026-11-23T18:30:00-05:00",
+      "end": "2026-11-23T20:30:00-05:00",
+      "event_starts_at": {
+        "user_local": "2026-11-23T18:30:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-23T23:30:00.000Z"
+      },
+      "event_ends_at": {
+        "user_local": "2026-11-23T20:30:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-24T01:30:00.000Z"
+      },
+      "location": "",
+      "calendar": "cruzate@google.com"
+    },
+    {
+      "summary": "Sleep",
+      "start": "2026-11-23T20:30:00-05:00",
+      "end": "2026-11-24T05:30:00-05:00",
+      "event_starts_at": {
+        "user_local": "2026-11-23T20:30:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-24T01:30:00.000Z"
+      },
+      "event_ends_at": {
+        "user_local": "2026-11-24T05:30:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-24T10:30:00.000Z"
+      },
+      "location": "Hearthstone Astoria, 34-35 44th St, Astoria, NY 11101, USA",
+      "calendar": "Personal"
+    },
+    {
+      "summary": "Jonathan's Injection ",
+      "start": "2026-11-23T22:00:00-05:00",
+      "end": "2026-11-23T23:00:00-05:00",
+      "event_starts_at": {
+        "user_local": "2026-11-23T22:00:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-24T03:00:00.000Z"
+      },
+      "event_ends_at": {
+        "user_local": "2026-11-23T23:00:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-24T04:00:00.000Z"
+      },
+      "location": "",
+      "calendar": "stephanygarces96@gmail.com"
+    },
+    {
+      "summary": "Gym- Glutes",
+      "start": "2026-11-24T07:00:00-05:00",
+      "end": "2026-11-24T09:00:00-05:00",
+      "event_starts_at": {
+        "user_local": "2026-11-24T07:00:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-24T12:00:00.000Z"
+      },
+      "event_ends_at": {
+        "user_local": "2026-11-24T09:00:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-24T14:00:00.000Z"
+      },
+      "location": "",
+      "calendar": "stephanygarces96@gmail.com"
+    },
+    {
+      "summary": "(No title)",
+      "start": "2026-11-24T09:00:00-05:00",
+      "end": "2026-11-24T10:00:00-05:00",
+      "event_starts_at": {
+        "user_local": "2026-11-24T09:00:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-24T14:00:00.000Z"
+      },
+      "event_ends_at": {
+        "user_local": "2026-11-24T10:00:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-24T15:00:00.000Z"
+      },
+      "location": "",
+      "calendar": "cruzate@google.com"
+    },
+    {
+      "summary": "REFORMER: LEVEL 2+",
+      "start": "2026-11-24T09:30:00-05:00",
+      "end": "2026-11-24T10:20:00-05:00",
+      "event_starts_at": {
+        "user_local": "2026-11-24T09:30:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-24T14:30:00.000Z"
+      },
+      "event_ends_at": {
+        "user_local": "2026-11-24T10:20:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-24T15:20:00.000Z"
+      },
+      "location": "",
+      "calendar": "stephanygarces96@gmail.com"
+    },
+    {
+      "summary": "(No title)",
+      "start": "2026-11-24T10:00:00-05:00",
+      "end": "2026-11-24T10:30:00-05:00",
+      "event_starts_at": {
+        "user_local": "2026-11-24T10:00:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-24T15:00:00.000Z"
+      },
+      "event_ends_at": {
+        "user_local": "2026-11-24T10:30:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-24T15:30:00.000Z"
+      },
+      "location": "",
+      "calendar": "cruzate@google.com"
+    },
+    {
+      "summary": "[Planned] Work (Office)",
+      "start": "2026-11-24T10:30:00-05:00",
+      "end": "2026-11-24T18:00:00-05:00",
+      "event_starts_at": {
+        "user_local": "2026-11-24T10:30:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-24T15:30:00.000Z"
+      },
+      "event_ends_at": {
+        "user_local": "2026-11-24T18:00:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-24T23:00:00.000Z"
+      },
+      "location": "Google Chelsea Market (111 8th Ave, New York, NY 10011, USA)",
+      "calendar": "Personal"
+    },
+    {
+      "summary": "(No title)",
+      "start": "2026-11-24T10:30:00-05:00",
+      "end": "2026-11-24T11:00:00-05:00",
+      "event_starts_at": {
+        "user_local": "2026-11-24T10:30:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-24T15:30:00.000Z"
+      },
+      "event_ends_at": {
+        "user_local": "2026-11-24T11:00:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-24T16:00:00.000Z"
+      },
+      "location": "",
+      "calendar": "cruzate@google.com"
+    },
+    {
+      "summary": "Mika Walking Daisy",
+      "start": "2026-11-24T11:00:00-05:00",
+      "end": "2026-11-24T12:00:00-05:00",
+      "event_starts_at": {
+        "user_local": "2026-11-24T11:00:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-24T16:00:00.000Z"
+      },
+      "event_ends_at": {
+        "user_local": "2026-11-24T12:00:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-24T17:00:00.000Z"
+      },
+      "location": "",
+      "calendar": "stephanygarces96@gmail.com"
+    },
+    {
+      "summary": "(No title)",
+      "start": "2026-11-24T11:00:00-05:00",
+      "end": "2026-11-24T11:30:00-05:00",
+      "event_starts_at": {
+        "user_local": "2026-11-24T11:00:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-24T16:00:00.000Z"
+      },
+      "event_ends_at": {
+        "user_local": "2026-11-24T11:30:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-24T16:30:00.000Z"
+      },
+      "location": "",
+      "calendar": "cruzate@google.com"
+    },
+    {
+      "summary": "Elsinor movie",
+      "start": "2026-11-24T11:15:00-05:00",
+      "end": "2026-11-24T13:15:00-05:00",
+      "event_starts_at": {
+        "user_local": "2026-11-24T11:15:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-24T16:15:00.000Z"
+      },
+      "event_ends_at": {
+        "user_local": "2026-11-24T13:15:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-24T18:15:00.000Z"
+      },
+      "location": "AMC Lincoln Square 13, 1998 Broadway, New York, NY 10023",
+      "calendar": "stephanygarces96@gmail.com"
+    },
+    {
+      "summary": "(No title)",
+      "start": "2026-11-24T12:30:00-05:00",
+      "end": "2026-11-24T13:30:00-05:00",
+      "event_starts_at": {
+        "user_local": "2026-11-24T12:30:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-24T17:30:00.000Z"
+      },
+      "event_ends_at": {
+        "user_local": "2026-11-24T13:30:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-24T18:30:00.000Z"
+      },
+      "location": "",
+      "calendar": "cruzate@google.com"
+    },
+    {
+      "summary": "(No title)",
+      "start": "2026-11-24T13:30:00-05:00",
+      "end": "2026-11-24T14:00:00-05:00",
+      "event_starts_at": {
+        "user_local": "2026-11-24T13:30:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-24T18:30:00.000Z"
+      },
+      "event_ends_at": {
+        "user_local": "2026-11-24T14:00:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-24T19:00:00.000Z"
+      },
+      "location": "",
+      "calendar": "cruzate@google.com"
+    },
+    {
+      "summary": "(No title)",
+      "start": "2026-11-24T14:00:00-05:00",
+      "end": "2026-11-24T14:30:00-05:00",
+      "event_starts_at": {
+        "user_local": "2026-11-24T14:00:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-24T19:00:00.000Z"
+      },
+      "event_ends_at": {
+        "user_local": "2026-11-24T14:30:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-24T19:30:00.000Z"
+      },
+      "location": "",
+      "calendar": "cruzate@google.com"
+    },
+    {
+      "summary": "(No title)",
+      "start": "2026-11-24T14:30:00-05:00",
+      "end": "2026-11-24T15:00:00-05:00",
+      "event_starts_at": {
+        "user_local": "2026-11-24T14:30:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-24T19:30:00.000Z"
+      },
+      "event_ends_at": {
+        "user_local": "2026-11-24T15:00:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-24T20:00:00.000Z"
+      },
+      "location": "",
+      "calendar": "cruzate@google.com"
+    },
+    {
+      "summary": "Verizon Shines Reward",
+      "start": "2026-11-24T15:00:00-05:00",
+      "end": "2026-11-24T15:10:00-05:00",
+      "event_starts_at": {
+        "user_local": "2026-11-24T15:00:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-24T20:00:00.000Z"
+      },
+      "event_ends_at": {
+        "user_local": "2026-11-24T15:10:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-24T20:10:00.000Z"
+      },
+      "location": "",
+      "calendar": "stephanygarces96@gmail.com"
+    },
+    {
+      "summary": "(No title)",
+      "start": "2026-11-24T15:00:00-05:00",
+      "end": "2026-11-24T15:30:00-05:00",
+      "event_starts_at": {
+        "user_local": "2026-11-24T15:00:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-24T20:00:00.000Z"
+      },
+      "event_ends_at": {
+        "user_local": "2026-11-24T15:30:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-24T20:30:00.000Z"
+      },
+      "location": "",
+      "calendar": "cruzate@google.com"
+    },
+    {
+      "summary": "(No title)",
+      "start": "2026-11-24T16:30:00-05:00",
+      "end": "2026-11-24T18:30:00-05:00",
+      "event_starts_at": {
+        "user_local": "2026-11-24T16:30:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-24T21:30:00.000Z"
+      },
+      "event_ends_at": {
+        "user_local": "2026-11-24T18:30:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-24T23:30:00.000Z"
+      },
+      "location": "",
+      "calendar": "cruzate@google.com"
+    },
+    {
+      "summary": "K-Pulse Internship",
+      "start": "2026-11-24T18:00:00-05:00",
+      "end": "2026-11-24T21:30:00-05:00",
+      "event_starts_at": {
+        "user_local": "2026-11-24T18:00:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-24T23:00:00.000Z"
+      },
+      "event_ends_at": {
+        "user_local": "2026-11-24T21:30:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-25T02:30:00.000Z"
+      },
+      "location": "",
+      "calendar": "stephanygarces96@gmail.com"
+    },
+    {
+      "summary": "(No title)",
+      "start": "2026-11-24T18:30:00-05:00",
+      "end": "2026-11-24T19:00:00-05:00",
+      "event_starts_at": {
+        "user_local": "2026-11-24T18:30:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-24T23:30:00.000Z"
+      },
+      "event_ends_at": {
+        "user_local": "2026-11-24T19:00:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-25T00:00:00.000Z"
+      },
+      "location": "",
+      "calendar": "cruzate@google.com"
+    },
+    {
+      "summary": "Inject Hyrimoz",
+      "start": "2026-11-24T19:00:00-05:00",
+      "end": "2026-11-24T19:30:00-05:00",
+      "event_starts_at": {
+        "user_local": "2026-11-24T19:00:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-25T00:00:00.000Z"
+      },
+      "event_ends_at": {
+        "user_local": "2026-11-24T19:30:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-25T00:30:00.000Z"
+      },
+      "location": "Hearthstone Astoria, 34-35 44th St, Astoria, NY 11101, USA",
+      "calendar": "Personal"
+    },
+    {
+      "summary": "(No title)",
+      "start": "2026-11-24T19:00:00-05:00",
+      "end": "2026-11-24T19:30:00-05:00",
+      "event_starts_at": {
+        "user_local": "2026-11-24T19:00:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-25T00:00:00.000Z"
+      },
+      "event_ends_at": {
+        "user_local": "2026-11-24T19:30:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-25T00:30:00.000Z"
+      },
+      "location": "",
+      "calendar": "cruzate@google.com"
+    },
+    {
+      "summary": "Sleep",
+      "start": "2026-11-24T20:30:00-05:00",
+      "end": "2026-11-25T05:30:00-05:00",
+      "event_starts_at": {
+        "user_local": "2026-11-24T20:30:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-25T01:30:00.000Z"
+      },
+      "event_ends_at": {
+        "user_local": "2026-11-25T05:30:00.000-05:00",
+        "user_timezone": "America/New_York",
+        "utc": "2026-11-25T10:30:00.000Z"
+      },
+      "location": "Hearthstone Astoria, 34-35 44th St, Astoria, NY 11101, USA",
+      "calendar": "Personal"
+    }
+  ]
+}

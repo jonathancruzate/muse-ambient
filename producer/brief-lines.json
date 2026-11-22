@@ -1,0 +1,12 @@
+{
+  "title": "Daily Brief",
+  "briefDate": "2026-11-21",
+  "generatedAt": "2026-11-22T04:21:23Z",
+  "lines": [
+    "Gym (5:00 PM – 7:00 PM)",
+    "Stephanie’s Birthday Mixer (8:00 PM – 10:00 PM)",
+    "Guilt & Gravy To The Grave: Friendsgiving Murder Mystery Potluck (Sun, Nov 22 · 3:00 PM)",
+    "Jonathan's Injection (Mon, Nov 23 · 10:00 PM)"
+  ],
+  "source": "daily-brief getbrief (topOfMind + lookingAhead)"
+}
