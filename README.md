@@ -12,6 +12,12 @@ Shield as the system screensaver. It has two faces, switchable in
 Settings: the **Dashboard** (default, new in v0.3) and the **Art slideshow**
 (the v0.2.2 system, unchanged), plus a Rotate mode that alternates them.
 
+## Screenshots
+
+![Muse Ambient dashboard screensaver running on the Shield TV](docs/screenshots/ambient-dashboard.jpg)
+
+*Muse Ambient running as the Shield TV's system screensaver (DreamService): clock and weather, the month wall calendar, and the Muse Dash register. Captured live from the Shield TV on 2026-11-24.*
+
 ## Dash items on the wall (v0.4.2)
 
 The footer register under the calendar gains a third voice: the Muse
